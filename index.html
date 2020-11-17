@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap4 - CSS -->
+    <link rel="stylesheet" href="./plugins/bootstrap4/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/bootstrap4/css/bootstrap-grid.min.css">
+    <!-- Bootstrap4/jQuery - JS -->
+    <script src="./plugins/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="./plugins/jquery/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js (Usado no Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Estilo Pessoal -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/small-logo.jpg" type="image" />
+    <title>Relatório de Vendas</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class='jumbotron jumbotron-fluid cabecalho'>
+        <div class="container-fluid text-center">
+            <h1 class="h2">Relatório de Vendas</h1>
+            <p class="lead">Emitido dia: 26/10/2020</p>
+            <p class="lead">Responsável: Joel M. Graf</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <!-- Dados de Solicitação -->
+        <section class="my-5">
+            <h2 class='h4 font-weight-bold text-center'>Dados do Relatório</h2>
+            <hr>
+            <div class="table-responsive"> 
+                <table class="table table-striped table-bordered shadow-sm">
+                    <thead class="tabela-cabecalho">
+                        <tr>
+                            <th scope="col">Código de relatório</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>000047</td>
+                            <td>26/10/2020</td>
+                            <td>08:19:48</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Dados dos Clientes -->
+        <section class="my-5">
+            <h2 class='h4 font-weight-bold text-center'>Dados de Venda por Filial</h2>
+            <hr>
+            <div class="table-responsive"> 
+                <table class="table table-striped table-bordered shadow-sm">
+                    <thead class="tabela-cabecalho">
+                        <tr>
+                            <th colspan="2" class='text-center tabela-cliente-cabecalho'>Filial 03 - Jaraguá do Sul, SC</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Tipo do Produto</th>
+                            <th scope="col">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Freezer</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>Televisão</td>
+                            <td>03</td>
+                        </tr>
+                        <tr>
+                            <td>Armário</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>Cama</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped table-bordered shadow-sm">
+                    <thead class="tabela-cabecalho">
+                    <tr>
+                        <th colspan="2" class='text-center tabela-cliente-cabecalho'>Filial 01 - Joinville, SC</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Tipo do Produto</th>
+                        <th scope="col">Quantidade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Televisão</td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <td>Bicicleta</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Caneta</td>
+                        <td>9999</td>
+                    </tr>
+                    <tr>
+                        <td>Armário</td>
+                        <td>02</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class='h4 font-weight-bold text-center'>Desempenho das Filiais</h2>
+            <hr>
+            <div class="table-responsive"> 
+                <table class="table table-striped table-bordered shadow-sm">
+                    <thead class="tabela-cabecalho">
+                        <tr>
+                            <th scope="col">Filial</th>
+                            <th scope="col">Nota (Max: 100)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Filial 01 - Joinville, SC</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <td>Filial 03 - Jaraguá do Sul, SC</td>
+                            <td>73</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <h2 class='h4 font-weight-bold text-center'>Enviar relatório por e-mail?</h2>
+            <hr> 
+            <form class="d-flex flex-row justify-content-center flex-wrap" action="#" method="get">
+                <button type="button submit" value='nao' class="btn btn-danger btn-lg mx-3 mt-2 col-sm-5 col-lg-4">Não</button>
+                <button type="button submit" value='sim' class="btn btn-success btn-lg mx-3 mt-2 col-sm-5 col-lg-4">Sim</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Fonte e background padrão */
+body {
+    background-color: #F5F5F5;
+    font-family: 'nexa_lightregular';
+}
+
+/* Fonte para títulos */
+h1, h2 {
+    font-family: 'nexa_boldregular' !important;
+}
+
+/* Header (jumbotron) e Cabeçalho de Cliente */
+.cabecalho, .tabela-cliente-cabecalho {
+    background-color: rgb(57,57,56);
+    color: #F5F5F5;
+}
+
+/* Cabeçalho das tabelas */
+.tabela-cabecalho {
+    background-color: #c6c6c6;
+    color: black;
+}
+
+/* Cor de destaque da tabela zebrada */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #F0F0F0;
+}
